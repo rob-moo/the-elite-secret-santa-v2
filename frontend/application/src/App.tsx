@@ -2,11 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import GiftClient from './ApiClients/GiftClient';
+import { Header } from './components/header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header></Header>
+      <div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -20,7 +22,7 @@ function App() {
           Learn React
         </a>
         <button onClick={async () => { const giftClient = new GiftClient(); await giftClient.getGiftsByUser('1')}}>Test</button>
-      </header>
+      </div>
     </div>
   );
 }
