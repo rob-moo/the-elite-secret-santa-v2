@@ -1,7 +1,7 @@
 import {useState} from "react";
 import '../../App.css'
 
-export const Header = () => {
-    const [title] = useState('title');
+export const Footer = () => {
+    const [title] = useState('fin');
     return (<div className="App-header">{title}</div>)
 }

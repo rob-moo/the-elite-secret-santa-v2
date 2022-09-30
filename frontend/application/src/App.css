@@ -1,9 +1,17 @@
+@import "./global.css";
+
 .App {
   text-align: center;
+  overflow: hidden;
+}
+
+.Main {
+  min-height: 90vh;
+  background-color: var(--floral-white);
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100vmin;
   pointer-events: none;
 }
 
@@ -14,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--rosso-corsa);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
