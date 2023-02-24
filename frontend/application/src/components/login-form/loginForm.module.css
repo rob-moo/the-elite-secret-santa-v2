@@ -1,0 +1,83 @@
+.outer-login-form-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.inner-login-form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 2;
+    place-items: center;
+}
+
+.santa-container {
+    /* https://i.gifer.com/TZOK.gif */
+    display: grid;
+    grid-row: 1;
+    justify-items: center;
+    align-items: self-end;
+}
+
+.user-pass-container {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+    justify-items: center;
+    row-gap: 5px;
+}
+
+.username-container,
+.password-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50%;
+}
+
+.username-container {
+    grid-row: 2;
+}
+.password-container {
+    grid-row: 3;
+}
+
+.submit-login {
+    cursor: pointer;
+    height: 100%;
+    width: 50%;
+    grid-row: 4;
+}
+
+svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transform-origin: 50% 50%;
+    width: 500px;
+    height: 500px;
+    backface-visibility: hidden;
+    border: 1px solid red;
+}
+
+.base,
+.top,
+.stripe {
+    stroke-width: 3;
+    stroke: #de4e37;
+    fill: none;
+}
+
+.top {
+    fill: #fff;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+    fill: #de4e37;
+}
+
+.white .base {
+    fill: #fff;
+}

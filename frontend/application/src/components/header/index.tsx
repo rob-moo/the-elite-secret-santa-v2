@@ -1,7 +1,5 @@
-import {useState} from "react";
-import '../../App.css'
+import '../../App.css';
 
 export const Header = () => {
-    const [title] = useState('title');
-    return (<div className="App-header">{title}</div>)
-}
+    return <div className="App-header"></div>;
+};

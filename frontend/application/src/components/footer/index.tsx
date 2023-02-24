@@ -2,6 +2,6 @@ import {useState} from "react";
 import '../../App.css'
 
 export const Footer = () => {
-    const [title] = useState('fin');
-    return (<div className="App-header">{title}</div>)
+    const [title] = useState('');
+    return (<div className="App-footer">{title}</div>)
 }

@@ -1,0 +1,12 @@
+.outer-login-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.inner-login-container {
+    grid-column: 2;
+    align-items: center;
+    display: grid;
+}

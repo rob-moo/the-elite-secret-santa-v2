@@ -1,0 +1,35 @@
+.gif-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+}
+
+.parrot {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.reindeer-dance {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.snoop {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.explosion {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 50px;
+    color: var(--floral-white);
+}
